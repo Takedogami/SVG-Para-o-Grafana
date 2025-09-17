@@ -1,35 +1,40 @@
-[
-  {
-    "selector": "#fluxo_entrada",
-    "metric": "entrada_fluxo",
-    "property": "fill",
-    "map": [
-      { "match": "0", "value": "lightgray" },
-      { "match": "1", "value": "green" }
-    ]
-  },
-  {
-    "selector": "#fluxo_prensa",
-    "metric": "prensa_fluxo",
-    "property": "fill",
-    "map": [
-      { "match": "0", "value": "lightgray" },
-      { "match": "1", "value": "blue" }
-    ]
-  },
-  {
-    "selector": "#fluxo_saida",
-    "metric": "saida_fluxo",
-    "property": "fill",
-    "map": [
-      { "match": "0", "value": "lightgray" },
-      { "match": "1", "value": "orange" }
-    ]
-  },
-  {
-    "selector": "#texto_fluxo_saida",
-    "metric": "saida_fluxo",
-    "property": "text",
-    "format": "{{value}} t/h"
-  }
-]
+{
+  "panels": [
+    {
+      "type": "svg",
+      "title": "Dashboard Prensa",
+      "id": 1,
+      "svgUrl": "local_do_seu_svg.svg",
+      "elements": [
+        {
+          "id": "0",
+          "name": "medidor_1",
+          "label": "Vazão",
+          "type": "indicator",
+          "value": 0
+        },
+        {
+          "id": "GLG2hDW-hK7VaibSoC1b-3",
+          "name": "float1",
+          "label": "Vazão Entrada",
+          "type": "indicator",
+          "value": 0
+        },
+        {
+          "id": "GLG2hDW-hK7VaibSoC1b-5",
+          "name": "float2",
+          "label": "Vazão Prensa",
+          "type": "indicator",
+          "value": 0
+        },
+        {
+          "id": "GLG2hDW-hK7VaibSoC1b-6",
+          "name": "float3",
+          "label": "Vazão Saída",
+          "type": "indicator",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
