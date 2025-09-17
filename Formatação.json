@@ -1,38 +1,92 @@
 {
   "panels": [
     {
-      "type": "svg",
+      "type": "flowcharting",
       "title": "Dashboard Prensa",
       "id": 1,
-      "svgUrl": "local_do_seu_svg.svg",
+      "options": {
+        "pan": true,
+        "zoom": true
+      },
+      "svgUrl": "https://raw.githubusercontent.com/Takedogami/SVG-Para-o-Grafana/refs/heads/main/Formatação.json",
       "elements": [
         {
           "id": "0",
           "name": "medidor_1",
           "label": "Vazão",
           "type": "indicator",
-          "value": 0
+          "value": "${RandomWalker1}",
+          "style": {
+            "color": "#00ff00",
+            "fontSize": 16
+          }
         },
         {
           "id": "GLG2hDW-hK7VaibSoC1b-3",
           "name": "float1",
           "label": "Vazão Entrada",
           "type": "indicator",
-          "value": 0
+          "value": "${RandomWalker2}",
+          "style": {
+            "color": "#ff9900",
+            "fontSize": 16
+          }
         },
         {
           "id": "GLG2hDW-hK7VaibSoC1b-5",
           "name": "float2",
           "label": "Vazão Prensa",
           "type": "indicator",
-          "value": 0
+          "value": "${RandomWalker3}",
+          "style": {
+            "color": "#ff0000",
+            "fontSize": 16
+          }
         },
         {
           "id": "GLG2hDW-hK7VaibSoC1b-6",
           "name": "float3",
           "label": "Vazão Saída",
           "type": "indicator",
-          "value": 0
+          "value": "${RandomWalker4}",
+          "style": {
+            "color": "#0000ff",
+            "fontSize": 16
+          }
+        }
+      ],
+      "data": [
+        {
+          "name": "RandomWalker1",
+          "query": "RandomWalker",
+          "field": "value",
+          "mapping": {
+            "medidor_1": "RandomWalker1"
+          }
+        },
+        {
+          "name": "RandomWalker2",
+          "query": "RandomWalker",
+          "field": "value",
+          "mapping": {
+            "float1": "RandomWalker2"
+          }
+        },
+        {
+          "name": "RandomWalker3",
+          "query": "RandomWalker",
+          "field": "value",
+          "mapping": {
+            "float2": "RandomWalker3"
+          }
+        },
+        {
+          "name": "RandomWalker4",
+          "query": "RandomWalker",
+          "field": "value",
+          "mapping": {
+            "float3": "RandomWalker4"
+          }
         }
       ]
     }
