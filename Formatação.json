@@ -82,7 +82,7 @@
         },
         {
           "name": "RandomWalker4",
-          "query": "RandomWalker",
+          "query": "D",
           "field": "value",
           "mapping": {
             "float3": "RandomWalker4"
@@ -92,4 +92,5 @@
     }
   ]
 }
+
 
