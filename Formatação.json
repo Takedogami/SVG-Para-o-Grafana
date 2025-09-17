@@ -1,0 +1,35 @@
+[
+  {
+    "selector": "#fluxo_entrada",
+    "metric": "entrada_fluxo",
+    "property": "fill",
+    "map": [
+      { "match": "0", "value": "lightgray" },
+      { "match": "1", "value": "green" }
+    ]
+  },
+  {
+    "selector": "#fluxo_prensa",
+    "metric": "prensa_fluxo",
+    "property": "fill",
+    "map": [
+      { "match": "0", "value": "lightgray" },
+      { "match": "1", "value": "blue" }
+    ]
+  },
+  {
+    "selector": "#fluxo_saida",
+    "metric": "saida_fluxo",
+    "property": "fill",
+    "map": [
+      { "match": "0", "value": "lightgray" },
+      { "match": "1", "value": "orange" }
+    ]
+  },
+  {
+    "selector": "#texto_fluxo_saida",
+    "metric": "saida_fluxo",
+    "property": "text",
+    "format": "{{value}} t/h"
+  }
+]
