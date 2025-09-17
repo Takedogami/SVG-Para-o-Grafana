@@ -58,7 +58,7 @@
       "data": [
         {
           "name": "RandomWalker1",
-          "query": "RandomWalker",
+          "query": "A",
           "field": "value",
           "mapping": {
             "medidor_1": "RandomWalker1"
@@ -92,3 +92,4 @@
     }
   ]
 }
+
